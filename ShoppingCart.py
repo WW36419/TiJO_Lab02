@@ -76,7 +76,7 @@ class TestShoppingCart(unittest.TestCase):
         print("* setUp()")
         self.cart = ShoppingCart()
 
-    def test_1(self):
+    def test_add_product_should_add_product_to_list(self):
         print("** test_1()")
         # Arrange
         prod1 = ["Woda 1,5L", 2, 2]
@@ -93,7 +93,7 @@ class TestShoppingCart(unittest.TestCase):
             self.cart.add_product("Woda 1,5L", None, None)
             self.cart.checkout()
 
-    def test_2(self):
+    def test_remove_product_should_remove_product_from_list(self):
         print("** test_2()")
         # Arrange
         prod1 = ["Woda 1,5L", 2, 2]
@@ -113,7 +113,7 @@ class TestShoppingCart(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.cart.remove_product("")
 
-    def test_3(self):
+    def test_update_quantity_should_change_quantity_of_the_product(self):
         print("** test_3()")
         # Arrange
         prod1 = ["Woda 1,5L", 2, 2]
