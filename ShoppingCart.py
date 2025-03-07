@@ -94,7 +94,7 @@ class TestShoppingCart(unittest.TestCase):
             self.cart.checkout()
 
     def test_remove_product_should_remove_product_from_list(self):
-        print("** test_remove_product_should_remove_product_from_list")
+        print("** test_remove_product_should_remove_product_from_list()")
         # Arrange
         prod1 = ["Woda 1,5L", 2, 2]
         prod2 = ["Chleb 500g", 5, 1]
@@ -114,7 +114,7 @@ class TestShoppingCart(unittest.TestCase):
             self.cart.remove_product("")
 
     def test_update_quantity_should_change_quantity_of_the_product(self):
-        print("** test_update_quantity_should_change_quantity_of_the_product")
+        print("** test_update_quantity_should_change_quantity_of_the_product()")
         # Arrange
         prod1 = ["Woda 1,5L", 2, 2]
         prod2 = ["Chleb 500g", 5, 1]
